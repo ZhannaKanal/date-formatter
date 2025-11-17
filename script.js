@@ -11,8 +11,8 @@ const minutes = date.getMinutes();
 const formattedDate = `${day}-${month}-${year}`;
 currentDateParagraph.textContent = formattedDate;
 
-const exampleSentence = "selur pmaCedoCeerf".split("");
-console.log(exampleSentence);
+const exampleSentence = "selur pmaCedoCeerf".split("").reverse().join("");
+console.log(exampleSentence); //comparing the result of three methods
 
 dateOptionsSelectElement.addEventListener("change", () => {
   switch (dateOptionsSelectElement.value) {
